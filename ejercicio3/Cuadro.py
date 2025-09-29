@@ -2,7 +2,7 @@ from .lugar import Lugar
 
 class Cuadro(Lugar):
     def __init__ (self, institucion, ciudad, pais, titulo, AC, tecnica, subtecnica, soporte, autor, estado):
-        super().__innit__(institucion, ciudad, pais)
+        super().__init__(institucion, ciudad, pais)
         self.titulo = titulo
         self.AC = AC
         self.tecnica = tecnica

@@ -60,7 +60,7 @@ if __name__ == "__main__":
     L2 = Lugar("Museo de Louvre", "París", "Francia")
 
     replica_gioconda = Cuadro(L1.institucion, L1.ciudad, L1.pais, "Gioconda de El Prado", "1503-1516", "Óleo", "Pincelada Simple", "Madera de Nogal", "Desconocido", "Bueno")
-    gioconda = Cuadr0(L2.institucion, L2.ciudad, L2.pais, "La Gioconda", "1503-1516", "Óleo", "Sfumato", "Madera de Álamo", "Leonardo da Vinci", "Regular")
+    gioconda = Cuadro(L2.institucion, L2.ciudad, L2.pais, "La Gioconda", "1503-1516", "Óleo", "Sfumato", "Madera de Álamo", "Leonardo da Vinci", "Regular")
 
     print(replica_gioconda)
     print(gioconda)

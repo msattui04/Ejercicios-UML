@@ -1,5 +1,5 @@
 class Lugar:
-    def __innit__ (self, institucion, ciudad, pais):
+    def __init__ (self, institucion, ciudad, pais):
         self.institucion = institucion
         self.ciudad = ciudad
         self.pais = pais

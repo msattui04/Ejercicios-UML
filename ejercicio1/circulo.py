@@ -1,10 +1,10 @@
-from figura import Figura
+from .figura import Figura
 import math
 
 class Circulo(Figura):
 
     def __init__ (self, color, diametro):
-        super().__init__("Círculo")
+        super().__init__("Circulo")
         self.color = color
         self.diametro = diametro
 

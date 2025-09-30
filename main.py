@@ -14,6 +14,10 @@ from ejercicio4.lugar import Lugar2
 from ejercicio4.etapa_construccion import Etapa_Construccion
 from ejercicio4.edificio import Edificio
 
+from ejercicio7.lugar3 import Lugar3
+from ejercicio7.proyecto import Proyecto
+from ejercicio7.miembro import Miembro
+
 if __name__ == "__main__":
 
     print("=====Ejercicio 1=====")
@@ -80,3 +84,12 @@ if __name__ == "__main__":
     catedral_de_santiago = Edificio("Catedral de Santiago de Compostela","Católico", 1128, 3/4/1211, 1896, "Granito", "Románico", L14.ciudad, L14.comunidad, L14.pais, EC1.fecha_inicio, EC1.fecha_fin, EC2.fecha_inicio, EC2.fecha_fin)
 
     print(catedral_de_santiago)
+    print("")
+
+    print("=====Ejercicio 7=====")
+
+    lugar_proy = Lugar3("SJL", 15,-297)
+    proy = Proyecto("Techo", 1/10/2025, 31/10/2025,lugar_proy)
+    miembro_proy = Miembro("Marcelo", "Sattui", "Jefe", proy)
+
+    print(miembro_proy)

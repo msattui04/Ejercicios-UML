@@ -18,6 +18,8 @@ from ejercicio7.lugar3 import Lugar3
 from ejercicio7.proyecto import Proyecto
 from ejercicio7.miembro import Miembro
 
+from ejercicio8.actuacion_arqueo import Arquelogica
+
 if __name__ == "__main__":
 
     print("=====Ejercicio 1=====")
@@ -93,3 +95,10 @@ if __name__ == "__main__":
     miembro_proy = Miembro("Marcelo", "Sattui", "Jefe", proy)
 
     print(miembro_proy)
+    print("")
+
+    print("=====Ejercicio 8=====")
+
+    act_arq = Arquelogica(2004,2006,"Sondeo")
+
+    print(act_arq)

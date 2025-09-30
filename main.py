@@ -63,5 +63,6 @@ if __name__ == "__main__":
     gioconda = Cuadro(L2.institucion, L2.ciudad, L2.pais, "La Gioconda", "1503-1516", "Óleo", "Sfumato", "Madera de Álamo", "Leonardo da Vinci", "Regular")
 
     print(replica_gioconda)
+    print("")
     print(gioconda)
     print("")

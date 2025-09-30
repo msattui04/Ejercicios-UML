@@ -10,6 +10,10 @@ from ejercicio2.hijo import Hijo
 from ejercicio3.lugar import Lugar
 from ejercicio3.Cuadro import Cuadro
 
+from ejercicio4.lugar import Lugar2
+from ejercicio4.etapa_construccion import Etapa_Construccion
+from ejercicio4.edificio import Edificio
+
 if __name__ == "__main__":
 
     print("=====Ejercicio 1=====")
@@ -56,13 +60,23 @@ if __name__ == "__main__":
 
     print("=====Ejercicio 3=====")
 
-    L1 = Lugar("Museo del Prado", "Madrid", "España")
-    L2 = Lugar("Museo de Louvre", "París", "Francia")
+    L13 = Lugar("Museo del Prado", "Madrid", "España")
+    L23 = Lugar("Museo de Louvre", "París", "Francia")
 
-    replica_gioconda = Cuadro(L1.institucion, L1.ciudad, L1.pais, "Gioconda de El Prado", "1503-1516", "Óleo", "Pincelada Simple", "Madera de Nogal", "Desconocido", "Bueno")
-    gioconda = Cuadro(L2.institucion, L2.ciudad, L2.pais, "La Gioconda", "1503-1516", "Óleo", "Sfumato", "Madera de Álamo", "Leonardo da Vinci", "Regular")
+    replica_gioconda = Cuadro(L13.institucion, L13.ciudad, L13.pais, "Gioconda de El Prado", "1503-1516", "Óleo", "Pincelada Simple", "Madera de Nogal", "Desconocido", "Bueno")
+    gioconda = Cuadro(L23.institucion, L23.ciudad, L23.pais, "La Gioconda", "1503-1516", "Óleo", "Sfumato", "Madera de Álamo", "Leonardo da Vinci", "Regular")
 
     print(replica_gioconda)
     print("")
     print(gioconda)
     print("")
+
+    print("=====Ejercicio 4=====")
+
+    L14 = Lugar2("Santiago de Compostela","Galicia", "España")
+    EC1 = Etapa_Construccion(1075,1122)
+    EC2 = Etapa_Construccion(1168,"-")
+
+    catedral_de_santiago = Edificio("Catedral de Santiago de Compostela","Católico", 1128, 3/4/1211, 1896, "Granito", "Románico", L14.ciudad, L14.comunidad, L14.pais, EC1.fecha_inicio, EC1.fecha_fin, EC2.fecha_inicio, EC2.fecha_fin)
+
+    print(catedral_de_santiago)

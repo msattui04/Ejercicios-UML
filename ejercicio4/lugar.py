@@ -1,4 +1,4 @@
-class Lugar:
+class Lugar2:
     def __init__ (self, ciudad, comunidad, pais):
         self.ciudad = ciudad
         self.comunidad = comunidad

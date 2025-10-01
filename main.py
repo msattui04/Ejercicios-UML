@@ -14,11 +14,17 @@ from ejercicio4.lugar import Lugar2
 from ejercicio4.etapa_construccion import Etapa_Construccion
 from ejercicio4.edificio import Edificio
 
-from ejercicio7.lugar3 import Lugar3
-from ejercicio7.proyecto import Proyecto
-from ejercicio7.miembro import Miembro
+from ejercicio7y10.lugar3 import Lugar3
+from ejercicio7y10.proyecto import Proyecto
+from ejercicio7y10.miembro import Miembro
 
 from ejercicio8.actuacion_arqueo import Arquelogica
+
+from ejercicio9.cuadro import Cuadro2
+from ejercicio9.cuadro import Tecnica
+from ejercicio9.cuadro import SubTecnica
+from ejercicio9.cuadro import Material
+from ejercicio9.cuadro import EstadoConservacion
 
 if __name__ == "__main__":
 
@@ -102,3 +108,10 @@ if __name__ == "__main__":
     act_arq = Arquelogica(2004,2006,"Sondeo")
 
     print(act_arq)
+    print("")
+
+    print("=====Ejercicio 9=====")
+
+    monalisa = Cuadro2("La Gioconda (Mona Lisa)", "1503-1519", Tecnica.OLEO, SubTecnica.SFUMATO, Material.ALAMO, "Leonardo da Vinci", EstadoConservacion.BUENO)
+
+    print(monalisa)
